@@ -1,0 +1,32 @@
+{
+  "name": "date-converter-bs-ad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Excel custom functions for Gregorian (AD) and Bikram Sambat (BS) dates.",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "office-addin-debugging start manifest.xml --dev-server \"npm run start:server\" --dev-server-port 3000",
+    "start:desktop": "office-addin-debugging start manifest.xml desktop --dev-server \"npm run start:server\" --dev-server-port 3000",
+    "start:server": "webpack serve --mode development",
+    "stop": "office-addin-debugging stop manifest.xml",
+    "validate": "office-addin-manifest validate manifest.xml && npm run build",
+    "validate:github-pages": "office-addin-manifest validate manifest.github-pages.xml && npm run build",
+    "test": "jest",
+    "lint": "eslint .",
+    "configure:github-pages": "node scripts/configure-github-pages.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "latest",
+    "custom-functions-metadata-plugin": "latest",
+    "eslint": "latest",
+    "html-webpack-plugin": "latest",
+    "jest": "latest",
+    "office-addin-manifest": "latest",
+    "office-addin-dev-certs": "latest",
+    "office-addin-debugging": "latest",
+    "typescript": "~5.8.3",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  }
+}
