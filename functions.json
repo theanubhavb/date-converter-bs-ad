@@ -1,0 +1,85 @@
+{
+    "allowCustomDataForDataTypeAny": true,
+    "functions": [
+        {
+            "description": "Converts an AD/Gregorian date to a BS date in YYYY.MM.DD format.",
+            "id": "ADTOBS",
+            "name": "ADTOBS",
+            "parameters": [
+                {
+                    "description": "An Excel date or YYYY-MM-DD date.",
+                    "name": "adDate",
+                    "type": "any"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Converts an AD/Gregorian date to a long BS date.",
+            "id": "ADTOBSLONG",
+            "name": "ADTOBSLONG",
+            "parameters": [
+                {
+                    "description": "An Excel date or YYYY-MM-DD date.",
+                    "name": "adDate",
+                    "type": "any"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Converts a BS date to an AD/Gregorian date in YYYY-MM-DD format.",
+            "id": "BSTOAD",
+            "name": "BSTOAD",
+            "parameters": [
+                {
+                    "description": "A BS date in YYYYMMDD, YYYY.MM.DD, YYYY-MM-DD, or YYYY/MM/DD.",
+                    "name": "bsDate",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Converts a BS date to a long AD/Gregorian date.",
+            "id": "BSTOADLONG",
+            "name": "BSTOADLONG",
+            "parameters": [
+                {
+                    "description": "A BS date in YYYYMMDD, YYYY.MM.DD, YYYY-MM-DD, or YYYY/MM/DD.",
+                    "name": "bsDate",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Returns the signed whole-day difference between two BS dates (first minus second).",
+            "id": "BSDATEDIF",
+            "name": "BSDATEDIF",
+            "parameters": [
+                {
+                    "description": "First BS date.",
+                    "name": "bsDate1",
+                    "type": "string"
+                },
+                {
+                    "description": "Second BS date.",
+                    "name": "bsDate2",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        }
+    ]
+}

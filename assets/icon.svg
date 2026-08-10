@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="BS AD date converter">
+  <rect width="128" height="128" rx="22" fill="#0f5b78"/>
+  <rect x="20" y="30" width="88" height="76" rx="9" fill="#ffffff"/>
+  <rect x="20" y="30" width="88" height="22" rx="9" fill="#e65335"/>
+  <path d="M40 22v18M88 22v18" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+  <text x="64" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#0f5b78">BS↔AD</text>
+</svg>
