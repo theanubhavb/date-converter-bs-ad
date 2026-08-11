@@ -13,17 +13,19 @@
     "validate:github-pages": "office-addin-manifest validate manifest.github-pages.xml && npm run build",
     "test": "jest",
     "lint": "eslint .",
-    "configure:github-pages": "node scripts/configure-github-pages.js"
+    "configure:github-pages": "node scripts/configure-github-pages.js",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "copy-webpack-plugin": "latest",
     "custom-functions-metadata-plugin": "latest",
     "eslint": "latest",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "latest",
     "jest": "latest",
-    "office-addin-manifest": "latest",
-    "office-addin-dev-certs": "latest",
     "office-addin-debugging": "latest",
+    "office-addin-dev-certs": "latest",
+    "office-addin-manifest": "latest",
     "typescript": "~5.8.3",
     "webpack": "latest",
     "webpack-cli": "latest",
