@@ -5,10 +5,10 @@
   "description": "Excel custom functions for Gregorian (AD) and Bikram Sambat (BS) dates.",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "office-addin-debugging start manifest-local.xml --dev-server \"npm run start:server\" --dev-server-port 3000",
-    "start:desktop": "office-addin-debugging start manifest-local.xml desktop --dev-server \"npm run start:server\" --dev-server-port 3000",
+    "start": "npx serve dist -l 3000",
+    "start:desktop": "npx serve dist -l 3000",
     "start:server": "webpack serve --mode development",
-    "stop": "office-addin-debugging stop manifest-local.xml",
+    "stop": "echo 'No local Office sideload needed; use the published GitHub Pages manifest.'",
     "validate": "office-addin-manifest validate manifest.xml && npm run build",
     "validate:github-pages": "office-addin-manifest validate manifest.xml && npm run build",
     "test": "jest",

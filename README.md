@@ -12,18 +12,18 @@ An Excel custom-functions add-in scaffolded in the same structure as the **Yeoma
 
 The supported BS data range is 2000.01.01–2090.12.30. Invalid or out-of-range inputs return a readable Excel cell message.
 
-## Local development
+## GitHub Pages deployment
 
 Install Node.js 22 LTS, then run:
 
 ```sh
 npm install
-npm run start
+npm run build
 ```
 
-`npm run start` is the Yeoman-style local workflow: it starts the HTTPS server, launches Excel, and sideloads `manifest-local.xml`. End a session cleanly with `npm run stop`.
+The app is designed to run from GitHub Pages using the published manifest at `https://theanubhavb.github.io/date-converter-bs-ad/manifest.xml`.
 
-## GitHub Pages and organization deployment
+## Organization deployment
 
 1. Push the repository to GitHub and enable **Settings → Pages → GitHub Actions**.
 2. The included workflow builds `dist/` and publishes it whenever `main` changes.
