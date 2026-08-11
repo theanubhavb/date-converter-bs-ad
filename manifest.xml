@@ -11,7 +11,7 @@
   <AppDomains><AppDomain>https://theanubhavb.github.io/date-converter-bs-ad</AppDomain></AppDomains>
   <Hosts><Host Name="Workbook"/></Hosts>
   <Requirements><Sets DefaultMinVersion="1.1"><Set Name="ExcelApi"/></Sets></Requirements>
-  <DefaultSettings><SourceLocation DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/dist/taskpane.html"/></DefaultSettings>
+  <DefaultSettings><SourceLocation DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/taskpane.html"/></DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
     <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
@@ -25,7 +25,7 @@
         </ExtensionPoint>
       </AllFormFactors></Host></Hosts>
       <Resources>
-        <bt:Urls><bt:Url id="Functions.Script.Url" DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/dist/functions.js"/><bt:Url id="Functions.Page.Url" DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/dist/functions.html"/><bt:Url id="Functions.Metadata.Url" DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/dist/functions.json"/></bt:Urls>
+        <bt:Urls><bt:Url id="Functions.Script.Url" DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/functions.js"/><bt:Url id="Functions.Page.Url" DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/functions.html"/><bt:Url id="Functions.Metadata.Url" DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/functions.json"/></bt:Urls>
         <bt:ShortStrings><bt:String id="Functions.Namespace" DefaultValue="DATE"/></bt:ShortStrings>
       </Resources>
     </VersionOverrides>
