@@ -27,8 +27,9 @@ npm run start
 
 1. Push the repository to GitHub and enable **Settings → Pages → GitHub Actions**.
 2. The included workflow builds `dist/` and publishes it whenever `main` changes.
-3. Create a production manifest with `npm run configure:github-pages -- YOUR_GITHUB_ACCOUNT date_converter_bs_ad`.
-4. Run `npm run validate:github-pages`, then submit `manifest.github-pages.xml` in the Microsoft 365 admin center: **Settings → Integrated apps → Upload custom apps → Office Add-in**.
+3. The workflow creates and publishes a production manifest at `https://YOUR_GITHUB_ACCOUNT.github.io/date-converter-bs-ad/manifest.xml`.
+4. To create the same file locally, run `npm run configure:github-pages -- YOUR_GITHUB_ACCOUNT date-converter-bs-ad`, then run `npm run validate:github-pages`.
+5. Download the published `manifest.xml` and submit it in the Microsoft 365 admin center: **Settings → Integrated apps → Upload custom apps → Office Add-in**.
 
 The manifest is intentionally separate from the hosted files: Microsoft 365 administrators upload the XML, while GitHub Pages hosts the HTML, JavaScript, and generated custom-function metadata.
 

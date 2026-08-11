@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const [owner, repository = "date_converter_bs_ad"] = process.argv.slice(2);
+const [owner, repository = "date-converter-bs-ad"] = process.argv.slice(2);
 if (!owner || !/^[A-Za-z0-9-]+$/.test(owner) || !/^[A-Za-z0-9._-]+$/.test(repository)) {
   throw new Error("Usage: npm run configure:github-pages -- <github-owner> [repository-name]");
 }
