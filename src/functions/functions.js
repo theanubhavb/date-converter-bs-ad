@@ -101,11 +101,4 @@
    */
   function bsDateDif(bsDate1, bsDate2) { return excel(() => Math.round((bsToAdUtc(bsDate1) - bsToAdUtc(bsDate2)) / MS_PER_DAY)); }
 
-if (typeof CustomFunctions !== "undefined") {
-  CustomFunctions.associate("ADTOBS", adToBs);
-  CustomFunctions.associate("ADTOBSLONG", adToBsLong);
-  CustomFunctions.associate("BSTOAD", bsToAd);
-  CustomFunctions.associate("BSTOADLONG", bsToAdLong);
-  CustomFunctions.associate("BSDATEDIF", bsDateDif);
-}
 if (typeof module !== "undefined") module.exports = { adToBs, adToBsLong, bsToAd, bsToAdLong, bsDateDif };
