@@ -1,14 +1,14 @@
 # BS/AD Date Converter for Excel
 
-An Excel custom-functions add-in scaffolded in the same structure as the **Yeoman Office generator** `excel-functions` project. It exposes the following names under the `DATE` namespace:
+An Excel custom-functions add-in scaffolded in the same structure as the **Yeoman Office generator** `excel-functions` project. It exposes the following names under the `NPDATE` namespace:
 
 | Excel formula | Result |
 | --- | --- |
-| `=DATE.ADTOBS(A1)` | BS date as `YYYY.MM.DD` |
-| `=DATE.ADTOBSLONG(A1)` | BS date such as `01 Baisakh 2081` |
-| `=DATE.BSTOAD("2081.01.01")` | AD date as `YYYY-MM-DD` |
-| `=DATE.BSTOADLONG("2081.01.01")` | AD date such as `April 13, 2024` |
-| `=DATE.BSDATEDIF("2081.01.02","2081.01.01")` | Signed whole-day difference |
+| `=NPDATE.ADTOBS(A1)` | BS date as `YYYY.MM.DD` |
+| `=NPDATE.ADTOBSLONG(A1)` | BS date such as `01 Baisakh 2081` |
+| `=NPDATE.BSTOAD("2081.01.01")` | AD date as `YYYY-MM-DD` |
+| `=NPDATE.BSTOADLONG("2081.01.01")` | AD date such as `April 13, 2024` |
+| `=NPDATE.BSDATEDIF("2081.01.02","2081.01.01")` | Signed whole-day difference |
 
 The supported BS data range is 2000.01.01–2090.12.30. Invalid or out-of-range inputs return a readable Excel cell message.
 

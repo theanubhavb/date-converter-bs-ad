@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xsi:type="TaskPaneApp">
   <Id>7535f9a5-4e61-4b8c-a5ca-c9edfdc7b3f5</Id>
-  <Version>1.0.0.0</Version>
+  <Version>1.0.1.0</Version>
   <ProviderName>Date Converter</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="BS/AD Date Converter"/>
@@ -26,7 +26,7 @@
       </AllFormFactors></Host></Hosts>
       <Resources>
         <bt:Urls><bt:Url id="Functions.Script.Url" DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/functions.js"/><bt:Url id="Functions.Page.Url" DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/functions.html"/><bt:Url id="Functions.Metadata.Url" DefaultValue="https://theanubhavb.github.io/date-converter-bs-ad/functions.json"/></bt:Urls>
-        <bt:ShortStrings><bt:String id="Functions.Namespace" DefaultValue="DATE"/></bt:ShortStrings>
+        <bt:ShortStrings><bt:String id="Functions.Namespace" DefaultValue="NPDATE"/></bt:ShortStrings>
       </Resources>
     </VersionOverrides>
   </VersionOverrides>

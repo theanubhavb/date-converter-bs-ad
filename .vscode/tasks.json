@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "graphify-help",
+			"type": "shell",
+			"command": "/opt/homebrew/bin/graphify --help",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "graphify-current-repo",
+			"type": "shell",
+			"command": "cd /Users/anubhavbhattarai/Documents/date_converter_bs_ad && /Users/anubhavbhattarai/.local/share/uv/tools/graphifyy/bin/graphify .",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "graphify-code-only",
+			"type": "shell",
+			"command": "cd /Users/anubhavbhattarai/Documents/date_converter_bs_ad && /Users/anubhavbhattarai/.local/share/uv/tools/graphifyy/bin/graphify --code-only .",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
